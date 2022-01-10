@@ -4,7 +4,7 @@
 <!--------------------------------------------------- HEAD SECTION ---------------------------------------------------->
 <!--------------------------------------------------------------------------------------------------------------------->
 <head>
-    <title>Title</title>
+    <title>Brendan's Portfolio</title>
 <!--------------------------------------------------- Boring Stuff ---------------------------------------------------->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -45,8 +45,8 @@
     <div id="landing">
         <div class="container center-a">
             <h1> Brendan Li's Portfolio </h1>
-            <h2> I do be making cool stuff and wow im so sexy </h2>
-            <a class="btn btn-outline-dark" target="_blank" href="http://github.com/brendan3900" role="button">
+            <h2> Check out my projects :) </h2>
+            <a class="btn btn-outline-light" target="_blank" href="http://github.com/brendan3900" role="button">
                 See my super duper cool GitHub
             </a>
         </div>
@@ -54,19 +54,43 @@
 <!---------------------------------------- 1st Section of Webpage Body ------------------------------------------------>
     <div class="sect" id="projects">
         <div class="projects-header container">
-            <h1>Pretty Boi's Projects</h1>
+            <h2>Pretty Boi's Projects</h2>
         </div>
 
-        <div class="project container">
+        <div class="project container" id="project-1">
             <div class="row justify-content-center g-0">
-                <div class="bg-danger col-20 col-lg-11">
-                    hello
+                <h3>Project 1</h3>
+                <div class="slideshow col-20 col-lg-11">
+                    <div class="slideshow-container">
+
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides fade">
+                          <img src="reactiveLED1.jpg" style="width:100%">
+                          <div class="text">Caption Text</div>
+                        </div>
+                      
+                        <div class="mySlides fade">
+                          <img src="img2.jpg" style="width:100%">
+                          <div class="text">Caption Two</div>
+                        </div>
+                      
+                        <div class="mySlides fade">
+                          <img src="img3.jpg" style="width:100%">
+                          <div class="text">Caption Three</div>
+                        </div>
+                      
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                      </div>
+
                 </div>
-                <div class="bg-success offset-lg-1 col-20 col-lg-11">
-                    hello
+                <div class="projects-section offset-lg-1 col-20 col-lg-11">
+                    Description
                 </div>
             </div>
         </div>
+
     </div>
 </body>
 </html>

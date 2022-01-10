@@ -8,10 +8,17 @@
     font-weight: 300;
     position: relative;
     line-height: 1;
+    box-sizing:border-box
 }   
 h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
     line-height: 1;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3rem;
 }
 a:link, a:visited, a:hover, a:active, nav li:hover  {
     text-decoration: none;
