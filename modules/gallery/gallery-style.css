@@ -1,0 +1,100 @@
+/* ////////////////////////////////// */
+
+/* Common (shared by all galleries): */
+
+/* ////////////////////////////////// */
+
+.gallery {
+    overflow: visible;
+    position: relative;
+}
+
+.gallery ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery #carousel {
+    height: inherit;
+}
+
+.vert_spacer {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gallery .slide {
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    opacity: 0;
+}
+
+.gallery .btn {
+    width: 50px;
+    height: 100%;
+    cursor: pointer;
+    position: absolute;
+    opacity: .3;
+    top: 0;
+    padding: 0 40px;
+    user-select: none;
+    z-index: 5;
+}
+
+.gallery #left.btn {
+    left: 0;
+}
+
+.gallery #right.btn {
+    right: 0;
+}
+
+.gallery .btn #icon {
+    height: auto;
+    width:inherit;
+}
+
+.gallery #bar_island {
+    position: absolute;
+    width:100%;
+    z-index:5;
+}
+
+.gallery #bar_island ul {
+    display: inline-block;
+    position:relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.gallery .bar {
+    float: left;
+    margin: 0px;
+    padding: 20px 11px;
+    cursor: pointer;
+    overflow: hidden;
+    width: auto;
+    opacity: .5;
+    height: auto;
+}
+
+.gallery .innerbar {
+    width: 100%;
+}
+
+/* Hide left and right buttons */
+@media all and (max-width: 699px) {
+    #GalleryName .btn {
+        display: none;
+    }
+}

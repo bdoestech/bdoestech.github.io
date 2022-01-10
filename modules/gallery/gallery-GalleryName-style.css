@@ -1,0 +1,46 @@
+/* //////////////////////// */
+
+/* Unique (Per Gallery): */
+
+/* //////////////////////// */
+
+#GalleryName {
+    width: 100%;
+    height: 400px;
+}
+
+#GalleryName .btn {
+    width: 50px;
+    opacity: .6;
+}
+
+#GalleryName #right.btn {
+    padding-right: 60;
+}
+
+#GalleryName #left.btn {
+    padding-left: 60;
+}
+
+#GalleryName .btn #icon {
+    width: 40px;
+}
+
+#GalleryName #bar_island {
+    bottom: 0px;
+}
+
+#GalleryName .bar {
+    opacity: .3;
+}
+
+#GalleryName .innerbar {
+    width: 8px;
+    height: 8px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#GalleryName #bar_island .selected {
+    opacity: 1;
+}

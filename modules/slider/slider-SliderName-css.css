@@ -1,0 +1,45 @@
+/* //////////////////////// */
+
+/* Unique (Per slide show): */
+
+/* //////////////////////// */
+
+#SliderName {
+    width: 100%;
+    height: 30em;
+}
+
+#SliderName .btn {
+    width: 5em;
+    opacity: .6;
+}
+
+#SliderName #right.btn {
+    padding-right: 6em;
+}
+
+#SliderName #left.btn {
+    padding-left: 6rem;
+}
+
+#SliderName .btn #icon {
+    width: 3em;
+}
+
+#SliderName #bar_island {
+    bottom: 0px;
+}
+
+#SliderName .bar {
+    opacity: .3;
+}
+
+#SliderName .innerbar {
+    height: 3px;
+    border-radius: 2px;
+    background-color: white;
+}
+
+#SliderName #bar_island .selected {
+    opacity: 1;
+}

@@ -1,0 +1,117 @@
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////// Universal Default Stylings ///////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+* {
+    padding: 0;
+    margin:0;
+    font-family: roboto;
+    font-weight: 300;
+    position: relative;
+    line-height: 1;
+}   
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    line-height: 1;
+}
+a:link, a:visited, a:hover, a:active, nav li:hover  {
+    text-decoration: none;
+    /* color:inherit; */
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////// Resizing Breakpoints //////////////////////////////////// */
+/* ///////////// Used for making em and rem units responsive across all screen sizes //////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+/* X-Small Screens (Phone) */
+@media all and (max-width: 699px) {
+    html { font-size: 8px; }
+}
+/* Small Screens (Tablet or Split Screen FHD Desktop) */
+@media all and (min-width: 700px) {
+    html { font-size: 8px; }
+}
+/* Medium Screens (~720-768p HD Desktop) */
+@media all and (min-width: 1100px) {
+    html { font-size: 9px; }
+}
+/* Large Screens (1080p FHD Desktop) */
+@media all and (min-width: 1500px) {
+    html { font-size: 10px; }
+}
+/* Extra Large Screens (1440p/2K QHD Desktop) */
+@media all and (min-width: 2000px) {
+    html { font-size: 11px; }
+}
+/* Extra Extra Large Screens (2160p/4K UHD Desktop) */
+@media all and (min-width: 3200px) {
+    html { font-size: 16px; }
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////// Commom utility classes /////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Center this element horizontally */
+.h-center {
+    left:50%;
+    transform: translateX(-50%);
+    position: relative;
+}
+/* Center this element vertically */
+.v-center {
+    top:50%;
+    transform: translateY(-50%);
+    position: relative;
+}
+/* Center this element both horizontally and vertically */
+.center {
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+}
+/* Center this element horizontally, but with absolute positioning */
+.h-center-a {
+    left:50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+/* Center this element vertically, but with absolute positioning */
+.v-center-a {
+    top:50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+/* Center this element both horizontally and vertically, but with absolute positioning */
+.center-a {
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+/* Center this element horizontally, but with fixed positioning */
+.h-center-f {
+    left:50%;
+    transform: translateX(-50%);
+    position: fixed;
+}
+/* Center this element vertically, but with fixed positioning */
+.v-center-f {
+    top:50%;
+    transform: translateY(-50%);
+    position: fixed;
+}
+/* Center this element both horizontally and vertically, but with fixed positioning */
+.center-f {
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+}
+/* misc classes */
+.sect {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}

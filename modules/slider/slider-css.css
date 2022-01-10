@@ -1,0 +1,101 @@
+/* ////////////////////////////////// */
+
+/* Common (shared by all slideshows): */
+
+/* ////////////////////////////////// */
+
+.ui-draggable-disabled,
+.ui-state-disabled {
+    opacity: 1;
+}
+
+.slider {
+    overflow: hidden;
+    position: relative;
+}
+
+.slider ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.slider #carousel {
+    height: inherit;
+    width: auto;
+}
+
+.vert_spacer {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slider .slide {
+    height: inherit;
+    float: left;
+}
+
+.slider .btn {
+    width: 1em;
+    height: 100%;
+    cursor: pointer;
+    position: absolute;
+    opacity: .3;
+    top: 0;
+    padding: 0 4em;
+    user-select: none;
+    z-index: 5;
+}
+
+.slider #left.btn {
+    left: 0;
+}
+
+.slider #right.btn {
+    right: 0;
+}
+
+.slider .btn #icon {
+    height: auto;
+    width:inherit;
+}
+
+.slider #bar_island {
+    position: absolute;
+    width:100%;
+}
+
+.slider #bar_island ul {
+    display: inline-block;
+    position:relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.slider .bar {
+    float: left;
+    margin: 0em;
+    padding: 1em 0.3em;
+    cursor: pointer;
+    overflow: hidden;
+    width: 3em;
+    opacity: .5;
+    height: auto;
+}
+
+.slider .innerbar {
+    width: 100%;
+}
+
+/* Hide left and right buttons */
+@media all and (max-width: 699px) {
+    #SliderName .btn {
+        display: none;
+    }
+}
