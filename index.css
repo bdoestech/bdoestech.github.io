@@ -6,7 +6,7 @@
 }
 #landing {
     width:100%;
-    height:50rem;
+    height:40rem;
     position: relative;
     background-color: #A0144F;
     font-size: 2em;
@@ -15,31 +15,30 @@
     color: white;
     border: 1px solid lightgrey;
     border-radius: 0.5em;
-    padding: 2em 2em;
+    padding: 1.5em 1.5em;
     text-align: center;
     box-shadow: inset 1em
 }
 #landing h1 {
-    font-size: 3.5em;
+    font-size: 7rem;
     font-weight: 800;
     margin: .25em auto;
 }
 #landing h2 { 
-    font-size: 1.25em;
+    font-size: 2.5rem;
     font-weight: 200;
     margin: .25em auto;
 }
 #landing .btn {
-    font-size: 1em;
-    margin-top: 1.5em; 
-    margin-bottom: 1em; 
-    padding: .5em 2em;
-    border-radius: 100em;
+    font-size: 2rem;
+    margin-top: 1.5rem; 
+    margin-bottom: 1rem; 
+    padding: .5rem 2rem;
+    border-radius: 100rem;
 }
 .sect {
     background-color: whitesmoke;
     padding: 8em 5em;
-    border-bottom: 1px solid darkgray;
 }
 .projects-header {
     text-align: center;
@@ -50,6 +49,26 @@
     box-sizing: border-box;
     padding: 1em;
 }
+/* SUBJECTS */
+.subjects {
+    font-size: 2.5em;
+    font-weight: 400;
+    padding: 2px;
+}
+.projectText {
+  line-height: normal;
+  font-size: 2em;
+  font-weight: 350;
+  padding: 2px;
+}
+.date{
+  font-size: 1.5em;
+  font-weight: 350;
+  padding: 2px;
+  padding-left: 4px;
+}
+
+
 
 /* SLIDESHOWWWWW */
 .slideshow {
@@ -84,6 +103,8 @@
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  background-color: rgb(224, 214, 214);
+  opacity: 0.5;
 }
 
 /* Position the "next button" to the right */
@@ -95,11 +116,14 @@
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgb(224, 214, 214);
+  opacity: 1;
 }
 
 /* Number text (1/3 etc) */
 .numbertext {
   font-size: 1.5em;
+  text-align: center;
+  padding: 0.5em;
 }
 
 /* Fading animation */
@@ -128,7 +152,7 @@
   text-align: center;
   font-size: 1.5em;
   font-weight: 350;
-  margin-bottom: 15px;
+  margin: 1.5em;
   background: white;
 }
 
