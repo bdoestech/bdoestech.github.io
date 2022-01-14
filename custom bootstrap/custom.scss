@@ -39,4 +39,9 @@ $container-max-widths: (
   xxl: 3000px,
 );
 
+// Usage
+.custom-container {
+  @include make-container();
+}
+
 @import "bootstrap/scss/bootstrap.scss";

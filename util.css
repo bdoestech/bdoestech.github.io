@@ -33,8 +33,8 @@ a:link, a:visited, a:hover, a:active, nav li:hover  {
 /* ///////////// Used for making em and rem units responsive across all screen sizes //////////// */
 /* ////////////////////////////////////////////////////////////////////////////////////////////// */
 /* X-Small Screens (Phone) */
-@media all and (max-width: 699px) {
-    html { font-size: 5px; }
+@media all and (max-width: 700px) {
+    html { font-size: 7px; }
 }
 /* Small Screens (Tablet or Split Screen FHD Desktop) */
 @media all and (min-width: 700px) {

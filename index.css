@@ -36,6 +36,9 @@
     padding: .5rem 2rem;
     border-radius: 100rem;
 }
+.project h3 {
+  padding: 1em 0 0.5em 0;
+}
 .sect {
     background-color: whitesmoke;
     padding: 8em 5em;
@@ -44,10 +47,10 @@
     text-align: center;
 }
 .projects-section {
-    background-color: rgb(224, 214, 214);
+    background-color: rgb(214, 214, 220);
     border-radius: 0.5em;
     box-sizing: border-box;
-    padding: 1em;
+    padding: 2em;
 }
 /* SUBJECTS */
 .subjects {
@@ -161,13 +164,22 @@
 /* ////////////////////////////////////////////////////////////////////////////////////////////// */
 /* ////////////////////////////////////// X-SMALL SCREENS  ////////////////////////////////////// */
 /* ////////////////////////////////////////////////////////////////////////////////////////////// */
-@media all and (max-width: 599px) {
-    
+@media all and (max-width: 700px) {
+  .container {
+    max-width: 90%;
+}
+  .sect {
+    padding: 3em 0em;
+  }
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 /* ////////////////////////////////////////////////////////////////////////////////////////////// */
 /* /////////////////////////////////////// SMALL SCREENS  /////////////////////////////////////// */
 /* ////////////////////////////////////////////////////////////////////////////////////////////// */
-@media all and (min-width: 600px) and (max-width: 1099px) {
+@media all and (min-width: 700px) and (max-width: 1099px) {
     
 }
 /* ////////////////////////////////////////////////////////////////////////////////////////////// */
