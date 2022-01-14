@@ -9,7 +9,7 @@ $enable-shadows: true;
 // $enable-gradients: true;
 
 $grid-columns:      24;
-$grid-gutter-width: 1em;
+$grid-gutter-width: 1rem;
 
 // @import "bootstrap/scss/containers";
 // @import "bootstrap/scss/bootstrap-grid.scss";
@@ -38,5 +38,10 @@ $container-max-widths: (
   xl: 1850px,
   xxl: 3000px,
 );
+
+// Usage
+.custom-container {
+  @include make-container();
+}
 
 @import "bootstrap/scss/bootstrap.scss";

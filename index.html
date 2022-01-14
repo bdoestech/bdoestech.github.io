@@ -4,7 +4,8 @@
 <!--------------------------------------------------- HEAD SECTION ---------------------------------------------------->
 <!--------------------------------------------------------------------------------------------------------------------->
 <head>
-    <title>Title</title>
+    <title>Brendan's Portfolio</title>
+    <link rel="icon" href="files/banner-modified.png">
 <!--------------------------------------------------- Boring Stuff ---------------------------------------------------->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,7 +25,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 <!--------------------------------- Import & Link This Page's CSS & Javascript Files ---------------------------------->
     <link rel="stylesheet" href="util.css" />
-    <link rel="stylesheet" href="common.css" />
     <script src="common.js"></script> <!-- CSS Stylesheet specific to this page -->
     <link rel="stylesheet" href="index.css" /> <!-- CSS Stylesheet specific to this page -->
     <script src="index.js"></script> <!-- Javascript file specific to this page -->
@@ -33,6 +33,8 @@
     <!-- <meta name="keywords" content=""> -->
     <!-- <meta name="author" content="*author name*"> -->
     <!-- <base href="http://www._________.com/"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <!--------------------------------------------------------------------------------------------------------------------->
@@ -40,43 +42,359 @@
 <!--------------------------------------------------------------------------------------------------------------------->
 
 <body>
-<!------------------------------------------------------ Toolbar  ----------------------------------------------------->
-<div id="tb_spacer"></div>
-<nav id = "tb">
-    <div class="container">
-        <div class="tbb_island row col-24 col-sm-20 col-md-18 col-lg-14 col-xl-12 col-xxl-10 h-center g-0">
-        
-            <a href="index.html" class="tbb col current" id="tbb1"> Home </a>
-            <a href="page2.html" class="tbb col" id="tbb2"> Page 2 </a>
-            <a href="page3.html" class="tbb col" id="tbb3"> Page 3 </a>
-            <a href="page4.html" class="tbb col" id="tbb4"> Page 4 </a>
-        </div>
-    </div>
-</nav>
+
 <!------------------------------------------------ Main body of webpage ----------------------------------------------->
 <div id = "main">
     <div id="landing">
         <div class="container center-a">
-            <h1> Webpage Title </h1>
-            <h2> Very brief description / tag line </h2>
-            <a class="btn text-black btn-outline-dark" href="google.com" role="button">
-                Call to Action
+            <h1> My Portfolio </h1>
+            <h2> Check out some of my favorite personal projects below :) </h2>
+            <a class="btn btn-outline-light" target="_blank" href="http://github.com/brendan3900" role="button">
+                See My Github
             </a>
         </div>
     </div>
 <!---------------------------------------- 1st Section of Webpage Body ------------------------------------------------>
-    <div class="sect" id="sect-name-1">
-        <h1>Section 1 Header</h1>
+    <div class="sect" id="projects">
+        <div class="projects-header container">
+            <h2>Projects</h2>
+        </div>
+
+    <div class="project container" id="project-1">
+        <!---------------------------------------- LIGHTBOARD ------------------------------------------------>
+        <div class="row justify-content-center g-0">
+            <h3 class="col-24 text-center">Custom Light Board (Arduino Uno R3)</h3>
+            <div class="slideshow col-20 col-md-11">
+                <div class="slideshow-container">
+                    
+                    <div class="mySlides1">
+                        <img src="Slideshow/lightBoard1.jpg" style="width:100%">
+                        <div class="numbertext">1 / 4</div>
+                      </div>
+                    
+                      <div class="mySlides1">
+                        <img src="Slideshow/lightBoard4.jpg" style="width:100%">
+                        <div class="numbertext">2 / 4</div>
+                      </div>
+                    
+                      <div class="mySlides1">
+                        <img src="Slideshow/lightboard2.jpg" style="width:100%">
+                        <div class="numbertext">3 / 4</div>
+                      </div>
+                      
+                      <div class="mySlides1">
+                        <img src="Slideshow/lightBoard3.jpg" style="width:100%">
+                        <div class="numbertext">4 / 4</div>
+                      </div>
+
+                      <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+
+                </div>
+            </div>
+            <div class="projects-section offset-md-1 col-20 col-md-11">
+                    <div class="subjects">Summary</div>
+                        <div class="projectText"><ul>
+                                <li>This project is a custom light board powered/controlled by an Arduino Uno!</li><br>
+                                <li>The wooden platform was built to fit a 3 x 3 grid (each section 4" x 4") under frosted glass (3/32" thick). In each section of the
+                                    grid, there is an individual LED; each LED is connected to one another through wiring underneath
+                                    the board.</li><br>
+                                <li>The board is controlled by the user through a button on the side. Whenever the button 
+                                    is pressed, the color palette running through the LEDs changes (5 possible light patterns).</li><br>
+                                </ul> 
+                        </div>
+                    <br>
+                    <div class="subjects">Challenges</div>
+                        <div class="projectText"><ul>
+                            <li>Soldering the individual LEDs...This task came to be very tedious because for each LED there are 6 connections to be soldered. 
+                                However, it was a good opportunity to improve my soldering skills more & more.
+                            </li><br>
+                            <li>Woodworking...While I am an aspiring Electrical/Computer Engineer, the woodworking may have been my favorite part of this project :)
+                                But, holding the platform sides to the base when trying to screw/glue them together became an issue because I did not have enough clamps!
+                                So, this process took longer than it should have.
+                            </li><br>
+                            </ul> 
+                        </div>
+                        <div class="date">Finalized December 2021</div>
+                        <div class="subjects"><a href="https://youtu.be/wJqEvp_Uoko" target="_blank">See the Building Process & Parts List Here</a></div>
+            </div>
+        </div>
     </div>
-<!---------------------------------------- 2nd Section of Webpage Body ------------------------------------------------>
-    <div class="sect" id="sect-name-2">
-        <h1>Section 2 Header</h1>
+<br>
+<br>
+<br>
+<br>
+    <div class="project container" id="project-">
+        <!---------------------------------------- LED Cube ------------------------------------------------>
+        <div class="row justify-content-center g-0">
+            <h3 class="col-24 text-center">Reactive LED Cube (Arduino Uno R3)</h3>
+            <div class="slideshow col-20 col-md-11">
+                <div class="slideshow-container">
+
+                        <div class="mySlides2">
+                            <img src="Slideshow/reactiveLED1.jpg" style="width:100%">
+                            <div class="numbertext">1 / 4</div>
+                        </div>
+
+                        <div class="mySlides2">
+                            <img src="Slideshow/reactiveLED2.jpg" style="width:100%">
+                            <div class="numbertext">2 / 4</div>
+                        </div>
+
+                        <div class="mySlides2">
+                            <img src="Slideshow/reactiveLED3.jpg" style="width:100%">
+                            <div class="numbertext">3 / 4</div>
+                        </div>
+                        <div class="mySlides2">
+                            <img src="Slideshow/reactiveLED4.jpg" style="width:100%">
+                            <div class="numbertext">4 / 4</div>
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                      
+                </div>
+            </div>
+            <div class="projects-section offset-md-1 col-20 col-md-11">
+                    <div class="subjects">Summary</div>
+                    <div class="projectText"><ul>
+                            <li>This project is a reactive LED cube powered/controlled by an Arduino Uno and a modified IR proximity sensor!</li><br>
+                            <li>The cube was constructed as a 4" x 4" x 3" wooden box. The cube holds an IR proximity sensor and an individual LED, covered
+                                on top by glass (clear, 3/32" thick).
+                            </li><br>
+                            <li>Users may interact with this device by placing items on its surface. Whenever something is placed on top of the glass, the 
+                                LED lights up green; otherwise, the LED remains blue. </li><br>
+                            </ul> 
+                    </div>
+                <br>
+                <div class="subjects">Challenges</div>
+                    <div class="projectText"><ul>
+                        <li>Modified IR Sensor...In order to allow the IR transmitter and receiver to properly work through glass (at this distance), the transmitter
+                            was disconnected and soldered onto longer wire connections. This allowed the angle of the signal to bounce properly through the glass. 
+                            This aspect of the sensor was very finicky and difficult to calibrate.
+                        </li><br>
+                        <li>Woodworking...I did not have access to power tools for this project, so hand sawing wooden pieces of this size was difficult!
+                        </li><br>
+                        </ul> 
+                    </div>
+                    <div class="date">Finalized December 2021</div>
+                    <div class="subjects"><a href="https://youtu.be/-n8lgIjizZg" target="_blank">See the Building Process & Parts List Here</a></div>
+            </div>
+        </div>
     </div>
-</div>
+<br>
+<br>
+<br>
+<br>
+
+    <div class="project container" id="project-1">
+        <!---------------------------------------- Gaming Console ------------------------------------------------>
+        <div class="row justify-content-center g-0">
+            <h3 class="col-24 text-center">Arcade Gaming Console (Raspberry Pi B+ v1.2)</h3>
+            <div class="slideshow col-20 col-md-11">
+                <div class="slideshow-container">
+
+                        <div class="mySlides3">
+                            <img src="Slideshow/gaming1.jpg" style="width:100%">
+                            <div class="numbertext">1 / 4</div>
+                        </div>
+
+                        <div class="mySlides3">
+                            <img src="Slideshow/gaming2.jpg" style="width:100%">
+                            <div class="numbertext">2 / 4</div>
+                        </div>
+
+                        <div class="mySlides3">
+                            <img src="Slideshow/gaming3.jpg" style="width:100%">
+                            <div class="numbertext">3 / 4</div>
+                        </div>
+                        <div class="mySlides3">
+                            <img src="Slideshow/gaming4.jpg" style="width:100%">
+                            <div class="numbertext">4 / 4</div>
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+                      
+                </div>
+            </div>
+            <div class="projects-section offset-md-1 col-20 col-md-11">
+                    <div class="subjects">Summary</div>
+                    <div class="projectText"><ul>
+                            <li>This project is an arcade gaming console powered by a Raspberry Pi!</li><br>
+                            <li>The LCD screen was salvaged from an old monitor, and the frame was built to fit the screen's dimensions; the screen is held in place with metal
+                                backings (tabs) and aluminum tape. The electrical components/wiring are housed directly under the screen. An old mouse and keyboard are 
+                                used as the HIDs.
+                            </li><br>
+                            <li>Users can access Pacman, Tetris, Snake, and Space Invaders through the command line. Furthermore, I uploaded a self-developed Python script 
+                                Pong game that users can run through a Python IDE. </li>
+                            </ul> 
+                            (Someone assisted me in decorating the final product)
+                    </div>
+                <br>
+                <br>
+                <div class="subjects">Challenges</div>
+                    <div class="projectText"><ul>
+                        <li>Building the frame...This part was difficult because I did not have access to any power tools. So, the wooden frame was cut using a hand saw,
+                            which made it very difficult and tedious to cut out the screen container. Still, however, it was a lot of fun :)
+                        </li><br>
+                        <li>The Raspberry Pi...The Raspberry Pi I used was something I received at an IT camp in 10th grade and is a model that was released in 2014. 
+                            So, it was quite slow to actually get it running. However, it had no issue running simple games. Great way to put it to use!
+                        </li><br>
+                        </ul> 
+                    </div>
+                    <div class="date">Finalized November 2021</div>
+                    <div class="subjects"><a href="https://youtu.be/2Us0q8rcB_U" target="_blank">See the Building Process Here</a></div>
+            </div>
+        </div>
+    </div>
+<br>
+<br>
+<br>
+<br>
+
+
+    <div class="project container" id="project-1">
+        <!---------------------------------------- BED LIGHTS ------------------------------------------------>
+        <div class="row justify-content-center g-0">
+            <h3 class="col-24 text-center">Presence Detecting LED Strip (Arduino Uno R3)</h3>
+            <div class="slideshow col-20 col-md-11">
+                <div class="slideshow-container">
+
+                        <div class="mySlides4">
+                            <img src="Slideshow/bedLEDs1.jpg" style="width:100%">
+                            <div class="numbertext">1 / 3</div>
+                        </div>
+
+                        <div class="mySlides4">
+                            <img src="Slideshow/bedLEDs2.jpg" style="width:100%">
+                            <div class="numbertext">2 / 3</div>
+                        </div>
+
+                        <div class="mySlides4">
+                            <img src="Slideshow/bedLEDs3.jpg" style="width:100%">
+                            <div class="numbertext">3 / 3</div>
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+                      
+                </div>
+            </div>
+            <div class="projects-section offset-md-1 col-20 col-md-11">
+                    <div class="subjects">Summary</div>
+                    <div class="projectText"><ul>
+                            <li>The result of this project is a presence activated LED strip that is installed in my room!</li><br>
+                            <li>This project is powered by an Arduino Uno and uses a Passive IR motion sensor (PIR motion sensor) to detect any motion from a warm body (from humans).
+                                Whenever a presence is detected, the Arduino runs a red/purple color pattern for ~60 seconds.
+                            </li><br>
+                            <li>I incorporated a photoresistor so the device is only activated when the room is dim enough (at night when lights are off, dimmer lighting, etc.)</li><br>
+                            </ul> 
+                    </div>
+                <br>
+                <div class="subjects">Challenges</div>
+                    <div class="projectText"><ul>
+                        <li>Circuit Wiring/Organizing...I accidentally ordered the wrong wires, so (at first) I was unable to have most of the wires flush against the 
+                            breadboard. Instead, I had to use longer jumper wires which made the device look like a big jumble of cables. I felt like I had to fix it, but 
+                            when I got new solid-core electrical wires, I made a mistake putting my circuit back together. It took a while to figure out where I messed up
+                            and turned out to be a frustrating process, oops!
+                        </li><br>
+                        </ul> 
+                    </div>
+                    <div class="date">Finalized October 2021</div>
+                    <div class="subjects"><a href="https://youtu.be/a-glH_Uaz4w" target="_blank">See the Building Process & Parts List Here</a></div>
+            </div>
+        </div>
+    </div>
+<br>
+<br>
+<br>
+<br>
+
+
+    <div class="project container" id="project-1">
+        <!---------------------------------------- ECG CIRCUIT ------------------------------------------------>
+        <div class="row justify-content-center g-0">
+            <h3 class="col-24 text-center">ECG Circuit</h3>
+            <div class="slideshow col-20 col-md-11">
+                <div class="slideshow-container">
+
+                        <div class="mySlides5">
+                            <img src="Slideshow/ecg1.jpg" style="width:100%">
+                            <div class="numbertext">1 / 4</div>
+                        </div>
+
+                        <div class="mySlides5">
+                            <img src="Slideshow/ecg2.jpg" style="width:100%">
+                            <div class="numbertext">2 / 4</div>
+                        </div>
+
+                        <div class="mySlides5">
+                            <img src="Slideshow/ecg3.jpg" style="width:100%">
+                            <div class="numbertext">3 / 4</div>
+                        </div>
+                        <div class="mySlides5">
+                            <img src="Slideshow/ecg4.jpg" style="width:100%">
+                            <div class="numbertext">4 / 4</div>
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+                      
+                </div>
+            </div>
+            <div class="projects-section offset-md-1 col-20 col-md-11">
+                <div class="subjects">Summary</div>
+                <div class="projectText">(This is NOT a personal project but I still wanted to include it!)<br>
+                    <br>
+                    <ul>
+                        <li>This is a project I completed in my Circuits and Signals: Biomedical Applications course! I find this particular project very cool
+                            because I have experience working in the medical field (as an EMT) and have used commercial ECG devices many times.
+                        </li><br>
+                        <li>The circuit created incorporated instrumentation amplifiers and high/low filters for signal processing. Through these methods, and gain steps,
+                            I was able to achieve a clean ECG signal.
+                        </li><br>
+                        <li>Through 3 electrode leads, I could test this circuit on my own body and see my own heart rhythym!</li><br>
+                        </ul> 
+                </div>
+            <br>
+            <div class="subjects">Challenges</div>
+                <div class="projectText"><ul>
+                    <li>Signal processing...When processing the signal from my own body, I was encountering a lot of unusual noise. I thought it was something wrong 
+                        with my circuit or calculations for a while, but I discovered that the issue was my desk's setup! Having my laptop charging and/or having a 
+                        monitor connected was somehow causing this problem. It was a relief it wasn't an issue with my calculations! :)
+                    </li><br>
+                    </ul> 
+                </div>
+                <div class="date">Finalized April 2021</div>
+                <div class="subjects"><a href="files/EECE2150_Lab15.pdf" target="_blank">Project Report (PDF)</a></div>
+        </div>
+        </div>
+    </div>
+<br>
+<br>
+<br>
+<br>
+
+
+    
+
+    </div>
+    </div>
+    <script>
+        showSlides(1, 0);
+        showSlides(1, 1);
+        showSlides(1, 2);
+        showSlides(1, 3);
+        showSlides(1, 4);
+        showSlides(1, 5);
+     </script>
+
+     <!-- FOOTERRRR-->
+     <div class="foot">
+        <br>
+        <a href="https://github.com/brendan3900" target="_blank">My Github</a> &emsp;⦿&emsp; li.bre@northeastern.edu &emsp;⦿&emsp; Published: Jan 2022
+       <br>
+      </div>
 </body>
 </html>
-<!--------------------------------------------------------------------------------------------------------------------->
-<!--------------------------------------------------------------------------------------------------------------------->
-<!----------------------------------------- HTML BOILERPLATE WRITTEN BY A-DUBS ---------------------------------------->
-<!--------------------------------------------------------------------------------------------------------------------->
-<!--------------------------------------------------------------------------------------------------------------------->
