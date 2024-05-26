@@ -5,16 +5,16 @@
 html {
   background-color: whitesmoke
 }
-
 #main {
     background-color: whitesmoke;
 }
 #landing {
     width:100%;
-    height:40rem;
+    height:30rem;
     position: relative;
     background-color: #4C6B8A;
     font-size: 2em;
+    margin-bottom: 1em;
 }
 #landing .container {
     color: whitesmoke;
@@ -22,10 +22,11 @@ html {
     border-radius: 0.5em;
     padding: 1.5em 1.5em;
     text-align: center;
-    box-shadow: inset 1em
+    box-shadow: inset 1em;
+    
 }
 #landing h1 {
-    font-size: 7rem;
+    font-size: 6rem;
     font-weight: 800;
     margin: .25em auto;
 }
@@ -41,19 +42,36 @@ html {
     padding: .5rem 2rem;
     border-radius: 100rem;
 }
-#projects .btn {
-  font-size: 2rem;
-  margin-top: 1.5rem; 
-  margin-bottom: 1rem; 
-  padding: .5rem 2rem;
-  border-radius: 100rem;
+
+#projects {
+  width:100%;
+  position: relative;
+  text-align: center;
+  box-shadow: inset 1em
 }
+
+.btn {
+  background-color: #4C6B8A;
+  transition: 0.7s;
+  width: 60%;
+  font-size: 3.5rem;
+  margin-top: 0rem; 
+  margin-bottom: 0rem; 
+  padding: 3rem 0rem;
+  border-radius: 3.5rem;
+}
+
+.btn:hover {
+  background-color: #8FA2B4;
+  color: black;
+}
+
 .project h3 {
   padding: 1em 0 0.5em 0;
 }
 .sect {
     background-color: whitesmoke;
-    padding: 8em 5em;
+    padding: 2.5em 2.5em;
 }
 .projects-header {
     text-align: center;
@@ -64,6 +82,8 @@ html {
     box-sizing: border-box;
     padding: 2em;
 }
+
+
 /* SUBJECTS */
 .subjects {
     font-size: 2.5em;
@@ -98,6 +118,7 @@ html {
 .body{
   background: whitesmoke;
 }
+
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////// */
 /* ////////////////////////////////////// X-SMALL SCREENS  ////////////////////////////////////// */
