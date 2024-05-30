@@ -3,7 +3,6 @@
     src: url("fonts/BloodyModes-gwwYp.ttf") format("opentype");
 }
 html {
-    font-family: Arial, sans-serif;
     font-family:'Courier New', Courier, monospace;
     position: relative;
 }
@@ -15,6 +14,9 @@ body {
     display:flex;
     flex-direction: column;
     min-height: 100vh;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+
 }   
 
 /* Topnav */
@@ -112,6 +114,45 @@ div.buttonBlock a:hover {
     background-color: whitesmoke;
 }
 /* -------- */
+
+
+/* projects */
+.projects{
+    width:75%;
+    margin: auto;
+    text-align: center;
+}
+.collapsible {
+    font-family:'Courier New', Courier, monospace;
+    background-color: #292929;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    outline: none;
+    font-size: 2.5rem;
+    border: 2px solid whitesmoke;
+    border-radius: 2rem;
+    transition: 0.5s;
+    margin-top:2rem;
+  }
+  
+  .collapsible:hover {
+    background-color: whitesmoke;
+    color:#292929;
+  }
+  .collapsible:active {
+    background-color: #292929;
+  }
+  .content {
+    display: none;
+    background-color: #292929;
+
+  }
+
+
+
+
 
 /* fOOTER */
 footer {
