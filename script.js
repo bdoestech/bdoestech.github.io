@@ -1,16 +1,23 @@
+$('.content').hide();
 $(".collapsible").click(function () {
 
     $header = $(this);
-    //getting the next element
     $content = $header.next();
-    //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
-    $content.slideToggle(500, function () {
-        //execute this after slideToggle is done
-        //change text of header based on visibility of content div
-        $header.text(function () {
-            //change text based on condition
-            // return $content.is(":visible") ? "Collapse" : "Expand";
-        });
-    });
+    $content.slideToggle(500, function () {});
+
+});
+
+$(".cv-head").click(function () {
+
+    $header = $(this);
+    $content = $header.next();
+    $content.slideToggle(300, function () {});
+
+});
+
+$('#main').hide();
+$(window).on('load', function(){
+
+    $('#main').slideToggle(800, function () {});
 
 });
