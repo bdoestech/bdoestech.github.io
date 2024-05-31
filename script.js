@@ -18,6 +18,6 @@ $(".cv-head").click(function () {
 $('.main').hide();
 $(window).on('load', function(){
 
-    $('.main').slideToggle(800, function () {});
+    $('.main').slideToggle(700, function () {});
 
 });
