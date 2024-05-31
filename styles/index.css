@@ -1,0 +1,37 @@
+/* main */
+h1, h2{
+    color: whitesmoke;
+}
+h3 {
+    color:whitesmoke;
+}
+p {
+    line-height: 1.6;
+}
+.container{
+    background-color: #292929;
+    margin-top: 1rem;
+}
+
+div.buttonBlock {text-align: center}
+div.buttonBlock a {
+    border: 2px solid whitesmoke;
+    background-color: #292929;
+    border-radius: 2rem;
+    color: whitesmoke;
+    padding: 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2.5rem;
+    margin: 1.5rem;
+    vertical-align: middle;
+    width: 45%;
+    transition:0.6s;
+}
+div.buttonBlock a:hover {
+    text-decoration: none;
+    color:black;
+    background-color: whitesmoke;
+}
+/* -------- */

@@ -1,0 +1,120 @@
+html {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    position: relative;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #292929;
+    color: whitesmoke;
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}   
+
+/* Topnav */
+.topnav {
+    background-color: #1f1f1f;
+    overflow: hidden;
+    width: 100%;
+}
+.topnav a {
+    float: left;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.25rem;
+    transition: 0.6s;
+    font-weight: 350;
+    border-radius: 2rem;
+
+}
+
+.topnav a.active {
+    background-color: #292929;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+
+}
+.topnav a.active:hover {
+    background-color: whitesmoke;
+    color: #292929;
+}
+
+/* -------- */
+
+/* fOOTER */
+footer {
+    margin-top:auto;
+    background-color: #292929;
+    text-align: left;
+}
+footer a {
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    font-size:0.7rem;
+    font-weight: 500;
+    color: whitesmoke;
+    margin-left:1rem;
+}
+/* -------- */
+
+
+
+
+:root {
+    --big_buttons_font: 2.5rem;
+    --cv_title_font: 3rem;
+    --cv_font: 1.2rem;
+}
+
+/* /////////////////////////////////////// X-SMALL SCREENS  /////////////////////////////////////// */
+@media all and (max-width: 700px) {
+    div.buttonBlock a  {font-size: calc(var(--big_buttons_font)*0.6);}
+    .collapsible {font-size: calc(var(--big_buttons_font)*0.6);}
+    .cv h1 {font-size: calc(var(--cv_title_font)*0.7);}
+    .cv-section {font-size: calc(var(--cv_font)*0.7);}
+}
+/* /////////////////////////////////////// SMALL SCREENS  /////////////////////////////////////// */
+@media all and (min-width: 700px) and (max-width: 1099px) {
+    div.buttonBlock a  {font-size: calc(var(--big_buttons_font)*0.7);}
+    .collapsible {font-size: calc(var(--big_buttons_font)*0.7);}
+    .cv-section {font-size: calc(var(--cv_font)*0.8);}
+
+}
+/* ////////////////////////////////////// MEDIUM SCREENS  /////////////////////////////////////// */
+@media all and (min-width: 1100px) and (max-width: 1499px) {
+    div.buttonBlock a  {font-size: calc(var(--big_buttons_font)*0.75);}
+    .collapsible {font-size: calc(var(--big_buttons_font)*0.75);}
+    .cv h1 {font-size: calc(var(--cv_title_font)*0.9);}
+    .cv-section {font-size: calc(var(--cv_font)*0.9);}
+
+}
+/* /////////////////////////////////////// LARGE SCREENS  /////////////////////////////////////// */
+@media all and (min-width: 1500px) and (max-width: 1999px) {
+    div.buttonBlock a  {font-size: var(--big_buttons_font);}
+    .collapsible {font-size: var(--big_buttons_font);}
+    .cv h1 {font-size: var(--cv_title_font);}
+    .cv-section {font-size: var(--cv_font);}
+
+}
+/* ////////////////////////////////////// X-LARGE SCREENS  ////////////////////////////////////// */
+@media all and (min-width: 2000px) and (max-width: 3199px) {
+    div.buttonBlock a  {font-size: var(--big_buttons_font);}
+    .collapsible {font-size: var(--big_buttons_font);}
+    .cv h1 {font-size: var(--cv_title_font);}
+    .cv-section {font-size: var(--cv_font);}
+
+}
+/* ///////////////////////////////////// XX-LARGE SCREENS  ////////////////////////////////////// */
+@media all and (min-width: 3200px) {
+    div.buttonBlock a  {font-size: var(--big_buttons_font);}
+    .collapsible {font-size: var(--big_buttons_font);}
+    .cv h1 {font-size: var(--cv_title_font);}
+    .cv-section {font-size: var(--cv_font);}
+
+}
