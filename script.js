@@ -15,9 +15,9 @@ $(".cv-head").click(function () {
 
 });
 
-$('.main').hide();
-$(window).on('load', function(){
+// $('.main').hide();
+// $(window).on('load', function(){
 
-    $('.main').slideToggle(700, function () {});
+//     $('.main').slideToggle(700, function () {});
 
-});
+// });
