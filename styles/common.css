@@ -37,7 +37,8 @@ body {
 .topnav a.active {
     background-color: #292929;
     color: whitesmoke;
-    border: 2px solid whitesmoke;
+    border: 4px solid whitesmoke;
+    border-style: inset;
 
 }
 .topnav a.active:hover {
@@ -70,6 +71,7 @@ footer a {
     --big_buttons_font: 2.5rem;
     --cv_title_font: 3rem;
     --cv_font: 1.2rem;
+    --banner-width: 20rem;
 }
 
 /* /////////////////////////////////////// X-SMALL SCREENS  /////////////////////////////////////// */
@@ -77,13 +79,16 @@ footer a {
     div.buttonBlock a  {font-size: calc(var(--big_buttons_font)*0.6);}
     .collapsible {font-size: calc(var(--big_buttons_font)*0.6);}
     .cv h1 {font-size: calc(var(--cv_title_font)*0.7);}
-    .cv-section {font-size: calc(var(--cv_font)*0.7);}
+    p {font-size: calc(var(--cv_font)*0.7);}
+    #banner{display:none;}
+
 }
 /* /////////////////////////////////////// SMALL SCREENS  /////////////////////////////////////// */
 @media all and (min-width: 700px) and (max-width: 1099px) {
     div.buttonBlock a  {font-size: calc(var(--big_buttons_font)*0.7);}
     .collapsible {font-size: calc(var(--big_buttons_font)*0.7);}
-    .cv-section {font-size: calc(var(--cv_font)*0.8);}
+    p {font-size: calc(var(--cv_font)*0.8);}
+    #banner{display:none;}
 
 }
 /* ////////////////////////////////////// MEDIUM SCREENS  /////////////////////////////////////// */
@@ -91,7 +96,8 @@ footer a {
     div.buttonBlock a  {font-size: calc(var(--big_buttons_font)*0.75);}
     .collapsible {font-size: calc(var(--big_buttons_font)*0.75);}
     .cv h1 {font-size: calc(var(--cv_title_font)*0.9);}
-    .cv-section {font-size: calc(var(--cv_font)*0.9);}
+    p {font-size: calc(var(--cv_font)*0.9);}
+    /* #banner{width:50%;} */
 
 }
 /* /////////////////////////////////////// LARGE SCREENS  /////////////////////////////////////// */
@@ -99,7 +105,8 @@ footer a {
     div.buttonBlock a  {font-size: var(--big_buttons_font);}
     .collapsible {font-size: var(--big_buttons_font);}
     .cv h1 {font-size: var(--cv_title_font);}
-    .cv-section {font-size: var(--cv_font);}
+    p {font-size: var(--cv_font);}
+    /* #banner{width:50%;} */
 
 }
 /* ////////////////////////////////////// X-LARGE SCREENS  ////////////////////////////////////// */
@@ -107,7 +114,8 @@ footer a {
     div.buttonBlock a  {font-size: var(--big_buttons_font);}
     .collapsible {font-size: var(--big_buttons_font);}
     .cv h1 {font-size: var(--cv_title_font);}
-    .cv-section {font-size: var(--cv_font);}
+    p {font-size: var(--cv_font);}
+    /* #banner{width:50%;} */
 
 }
 /* ///////////////////////////////////// XX-LARGE SCREENS  ////////////////////////////////////// */
@@ -115,6 +123,6 @@ footer a {
     div.buttonBlock a  {font-size: var(--big_buttons_font);}
     .collapsible {font-size: var(--big_buttons_font);}
     .cv h1 {font-size: var(--cv_title_font);}
-    .cv-section {font-size: var(--cv_font);}
-
+    p {font-size: var(--cv_font);}
+    /* #banner{width:50%;} */
 }
